@@ -1,0 +1,11 @@
+<%- include('partials/header') -%>
+
+<h1><u>100 Days of Code</u></h1>
+<!-- <p> <%= startingContent %> </p> -->
+
+<% blogs.forEach((post) => { %>
+    <h2><%= post.title %></h2>
+    <p><%= post.content %></p>
+<% }) %>
+
+<%- include('partials/footer') -%>
